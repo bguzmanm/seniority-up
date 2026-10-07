@@ -1,5 +1,5 @@
-import { Money } from '../vo/money.js';
-import { Client } from './client.js';
+import { Money } from '../../vo/money.js';
+import { Client } from '../../clients/models/client.js';
 
 export class Order {
   private items: OrderItem[] = [];

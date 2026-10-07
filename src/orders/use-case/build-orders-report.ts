@@ -1,6 +1,6 @@
-import { Client } from '../model/client.js';
-import { Order, type OrderWithDetails } from '../model/order.js';
-import { Money } from '../vo/money.js';
+import { Client } from '../../clients/models/client.js';
+import { Order, type OrderWithDetails } from '../models/order.js';
+import { Money } from '../../vo/money.js';
 import { Inject, Injectable } from '@nestjs/common';
 import {
   type IOrderRepository,
@@ -9,7 +9,7 @@ import {
 import {
   CLIENT_REPOSITORY,
   type ClientRepository,
-} from '../repositories/client.repository.js';
+} from '../../clients/repositories/client.repository.js';
 
 export interface ReportRow {
   order: Order;

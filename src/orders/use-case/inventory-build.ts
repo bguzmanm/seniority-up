@@ -6,12 +6,12 @@ import {
 import {
   CLIENT_REPOSITORY,
   type ClientRepository,
-} from '../repositories/client.repository.js';
+} from '../../clients/repositories/client.repository.js';
 import {
   UNIT_OF_WORK,
   type UnitOfWork,
-} from '../repositories/unit-of-work.js';
-import { Order } from '../model/order.js';
+} from '../../repositories/unit-of-work.js';
+import { Order } from '../models/order.js';
 
 export interface DecrementStockCommand {
   order: Order;

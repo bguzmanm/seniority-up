@@ -1,4 +1,4 @@
-import { Email } from "../vo/email.js";
+import { Email } from "../../vo/email.js";
 
 export class Client {
   private constructor(

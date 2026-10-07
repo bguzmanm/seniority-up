@@ -1,4 +1,4 @@
-import { Client } from "../model/client.js";
+import { Client } from "../models/client.js";
 
 export const CLIENT_REPOSITORY = Symbol('CLIENT_REPOSITORY');
 

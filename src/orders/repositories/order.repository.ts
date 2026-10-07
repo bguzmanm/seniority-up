@@ -1,5 +1,5 @@
-import { Order, OrderWithDetails } from '../model/order.js';
-import { Money } from "../vo/money.js";
+import { Order, OrderWithDetails } from '../models/order.js';
+import { Money } from "../../vo/money.js";
 
 export const ORDER_REPOSITORY = Symbol("ORDER_REPOSITORY");
 
@@ -15,7 +15,7 @@ export interface IOrderRepository {
   findAllWithDetails(): Promise<OrderWithDetails[]>;
 }
 
-export class OrderRepositoryImpl implements IOrderRepository {
+export class OrderRepository implements IOrderRepository {
   findById(id: string): Promise<Order | null> {
     return Promise.resolve(null);
   }
